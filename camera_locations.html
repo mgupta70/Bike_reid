@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e22c26d389efcb8ceb8e127b5f8e57a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e22c26d389efcb8ceb8e127b5f8e57a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e22c26d389efcb8ceb8e127b5f8e57a8 = L.map(
+                "map_e22c26d389efcb8ceb8e127b5f8e57a8",
+                {
+                    center: [33.423444, -111.930556],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d61567f3a14e5c56c1cacb5908ed7658 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+            var marker_754909f61fccb18a51340bc8e70aaba8 = L.marker(
+                [33.423444, -111.930556],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_fa2873cd4db9226827d7f62f166f4000 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2fb114024d1278483c2e353e9af61db3 = $(`<div id="html_2fb114024d1278483c2e353e9af61db3" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_1   Bikes: 198</div>`)[0];
+                popup_fa2873cd4db9226827d7f62f166f4000.setContent(html_2fb114024d1278483c2e353e9af61db3);
+            
+        
+
+        marker_754909f61fccb18a51340bc8e70aaba8.bindPopup(popup_fa2873cd4db9226827d7f62f166f4000)
+        ;
+
+        
+    
+    
+            var marker_219d92bdcb60f356b8ed28ff1a371034 = L.marker(
+                [33.4310504, -111.965257],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_8d33714427ddc48887a50d2e667b07af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82e04b717ff029eac0425a28bd23ceda = $(`<div id="html_82e04b717ff029eac0425a28bd23ceda" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_2   Bikes: 8</div>`)[0];
+                popup_8d33714427ddc48887a50d2e667b07af.setContent(html_82e04b717ff029eac0425a28bd23ceda);
+            
+        
+
+        marker_219d92bdcb60f356b8ed28ff1a371034.bindPopup(popup_8d33714427ddc48887a50d2e667b07af)
+        ;
+
+        
+    
+    
+            var marker_306b8c5cfe5643fb1af3714e57ca74f1 = L.marker(
+                [33.43198, -111.942999],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_0a923b5ee2d411077c0306029e7b005e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b03939c46404eb6240bddcefdbabdd84 = $(`<div id="html_b03939c46404eb6240bddcefdbabdd84" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_3   Bikes: 813</div>`)[0];
+                popup_0a923b5ee2d411077c0306029e7b005e.setContent(html_b03939c46404eb6240bddcefdbabdd84);
+            
+        
+
+        marker_306b8c5cfe5643fb1af3714e57ca74f1.bindPopup(popup_0a923b5ee2d411077c0306029e7b005e)
+        ;
+
+        
+    
+    
+            var marker_35c05080f54f928e187606a80bcd1665 = L.marker(
+                [33.41006, -111.92369],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_2954af85d09ce592c003929707071f24 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf7de71c53488bb278cd69802292885f = $(`<div id="html_cf7de71c53488bb278cd69802292885f" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_4   Bikes: 604</div>`)[0];
+                popup_2954af85d09ce592c003929707071f24.setContent(html_cf7de71c53488bb278cd69802292885f);
+            
+        
+
+        marker_35c05080f54f928e187606a80bcd1665.bindPopup(popup_2954af85d09ce592c003929707071f24)
+        ;
+
+        
+    
+    
+            var marker_d6c613b9877e0d2e95eba425369774c9 = L.marker(
+                [33.429917, -111.928944],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_3cd10587a40a6c7071528136c845d29d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac187d80db0deb2ed66102882199e063 = $(`<div id="html_ac187d80db0deb2ed66102882199e063" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_5   Bikes: 678</div>`)[0];
+                popup_3cd10587a40a6c7071528136c845d29d.setContent(html_ac187d80db0deb2ed66102882199e063);
+            
+        
+
+        marker_d6c613b9877e0d2e95eba425369774c9.bindPopup(popup_3cd10587a40a6c7071528136c845d29d)
+        ;
+
+        
+    
+    
+            var marker_100e57501ed724a0d5263e0b193449dd = L.marker(
+                [33.421889, -111.916639],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_2032afb665ded43e3cf0f6cebe225370 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_238b77f60fc32bce66627958e690950b = $(`<div id="html_238b77f60fc32bce66627958e690950b" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_6   Bikes: 110</div>`)[0];
+                popup_2032afb665ded43e3cf0f6cebe225370.setContent(html_238b77f60fc32bce66627958e690950b);
+            
+        
+
+        marker_100e57501ed724a0d5263e0b193449dd.bindPopup(popup_2032afb665ded43e3cf0f6cebe225370)
+        ;
+
+        
+    
+    
+            var marker_35d50aeb01e6b92848c44c89e67f9069 = L.marker(
+                [33.41454, -111.93046],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_a39541cc1d442bf989ff4cf5f14bb37b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2c5c838c4b8f9c9d062eacdcfc3dc68 = $(`<div id="html_d2c5c838c4b8f9c9d062eacdcfc3dc68" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_7   Bikes: 555</div>`)[0];
+                popup_a39541cc1d442bf989ff4cf5f14bb37b.setContent(html_d2c5c838c4b8f9c9d062eacdcfc3dc68);
+            
+        
+
+        marker_35d50aeb01e6b92848c44c89e67f9069.bindPopup(popup_a39541cc1d442bf989ff4cf5f14bb37b)
+        ;
+
+        
+    
+    
+            var marker_454e6ad10bb1d261891ec5a50ca993b8 = L.marker(
+                [33.41587, -111.93021],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_9f6fab5a2481d1fc2e5eea5b6ebc7d20 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c641388dbf4c0aeadd0d5768ff6db522 = $(`<div id="html_c641388dbf4c0aeadd0d5768ff6db522" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_8   Bikes: 475</div>`)[0];
+                popup_9f6fab5a2481d1fc2e5eea5b6ebc7d20.setContent(html_c641388dbf4c0aeadd0d5768ff6db522);
+            
+        
+
+        marker_454e6ad10bb1d261891ec5a50ca993b8.bindPopup(popup_9f6fab5a2481d1fc2e5eea5b6ebc7d20)
+        ;
+
+        
+    
+    
+            var marker_048c290bc7f94b0ac6e4149fc27a0ddf = L.marker(
+                [33.41477, -111.92296],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_ad328ebd4bd048425b00ab1727a59522 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_abe69142c1e3ba56c518bb90a0bd583d = $(`<div id="html_abe69142c1e3ba56c518bb90a0bd583d" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_9   Bikes: 555</div>`)[0];
+                popup_ad328ebd4bd048425b00ab1727a59522.setContent(html_abe69142c1e3ba56c518bb90a0bd583d);
+            
+        
+
+        marker_048c290bc7f94b0ac6e4149fc27a0ddf.bindPopup(popup_ad328ebd4bd048425b00ab1727a59522)
+        ;
+
+        
+    
+    
+            var marker_65a8b6b49d14b2ab63ec55fd38eb9ed7 = L.marker(
+                [33.425722, -111.939917],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_5747bc76dd315525cc0d9e11afd6366e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d7cdb3311340c09822b37c405bd1bd5 = $(`<div id="html_0d7cdb3311340c09822b37c405bd1bd5" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_10   Bikes: 162</div>`)[0];
+                popup_5747bc76dd315525cc0d9e11afd6366e.setContent(html_0d7cdb3311340c09822b37c405bd1bd5);
+            
+        
+
+        marker_65a8b6b49d14b2ab63ec55fd38eb9ed7.bindPopup(popup_5747bc76dd315525cc0d9e11afd6366e)
+        ;
+
+        
+    
+    
+            var marker_9d0afb9ac87f59c5e602ed8606a0248d = L.marker(
+                [33.4095014, -111.9478576],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_e8ecf5b99eb31913539d1fdd6596518b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01e03811e43f6558254d3b080d1e39b0 = $(`<div id="html_01e03811e43f6558254d3b080d1e39b0" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_11   Bikes: 119</div>`)[0];
+                popup_e8ecf5b99eb31913539d1fdd6596518b.setContent(html_01e03811e43f6558254d3b080d1e39b0);
+            
+        
+
+        marker_9d0afb9ac87f59c5e602ed8606a0248d.bindPopup(popup_e8ecf5b99eb31913539d1fdd6596518b)
+        ;
+
+        
+    
+    
+            var marker_b166e7cbbf555eee966778d80c13e92b = L.marker(
+                [33.416222, -111.921694],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_19bfd1dea7d9819b8210afa663a1c617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f17fd7fa967d2858069d9f3b2da501c1 = $(`<div id="html_f17fd7fa967d2858069d9f3b2da501c1" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_12   Bikes: 270</div>`)[0];
+                popup_19bfd1dea7d9819b8210afa663a1c617.setContent(html_f17fd7fa967d2858069d9f3b2da501c1);
+            
+        
+
+        marker_b166e7cbbf555eee966778d80c13e92b.bindPopup(popup_19bfd1dea7d9819b8210afa663a1c617)
+        ;
+
+        
+    
+    
+            var marker_448cdc75bf2f68df06928dd34a10bee2 = L.marker(
+                [33.414639, -111.907472],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_881ec2d93fd7745a9beb8949a928a4c0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4316ea2aac5c5898a8f9c6a3961bb7c6 = $(`<div id="html_4316ea2aac5c5898a8f9c6a3961bb7c6" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_13   Bikes: 115</div>`)[0];
+                popup_881ec2d93fd7745a9beb8949a928a4c0.setContent(html_4316ea2aac5c5898a8f9c6a3961bb7c6);
+            
+        
+
+        marker_448cdc75bf2f68df06928dd34a10bee2.bindPopup(popup_881ec2d93fd7745a9beb8949a928a4c0)
+        ;
+
+        
+    
+    
+            var marker_efde45127fd79e2e81660a1dbccca3e2 = L.marker(
+                [33.425472, -111.953833],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_c44724a2e7df8119c9bd0a4fe1533c43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18cb12d9e75c4157237450604777af95 = $(`<div id="html_18cb12d9e75c4157237450604777af95" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_14   Bikes: 1</div>`)[0];
+                popup_c44724a2e7df8119c9bd0a4fe1533c43.setContent(html_18cb12d9e75c4157237450604777af95);
+            
+        
+
+        marker_efde45127fd79e2e81660a1dbccca3e2.bindPopup(popup_c44724a2e7df8119c9bd0a4fe1533c43)
+        ;
+
+        
+    
+    
+            var marker_d2c42646a1b262596879b0b7e4706470 = L.marker(
+                [33.40312, -111.95206],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_9fccde1a8cdb8686204c8a3025ca9f75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2284c31808b75597e89290aa27dfddd5 = $(`<div id="html_2284c31808b75597e89290aa27dfddd5" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_15   Bikes: 122</div>`)[0];
+                popup_9fccde1a8cdb8686204c8a3025ca9f75.setContent(html_2284c31808b75597e89290aa27dfddd5);
+            
+        
+
+        marker_d2c42646a1b262596879b0b7e4706470.bindPopup(popup_9fccde1a8cdb8686204c8a3025ca9f75)
+        ;
+
+        
+    
+    
+            var marker_ed78ef1c654fad9dce2ef6b6980e1c12 = L.marker(
+                [33.39469, -111.93481],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_67e86640d648a4cf17fcbf571f907103 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d96fc58641c4d3e096aef2032ba28dc = $(`<div id="html_0d96fc58641c4d3e096aef2032ba28dc" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_16   Bikes: 236</div>`)[0];
+                popup_67e86640d648a4cf17fcbf571f907103.setContent(html_0d96fc58641c4d3e096aef2032ba28dc);
+            
+        
+
+        marker_ed78ef1c654fad9dce2ef6b6980e1c12.bindPopup(popup_67e86640d648a4cf17fcbf571f907103)
+        ;
+
+        
+    
+    
+            var marker_2f33cb47cb173b884042f8170617ccf4 = L.marker(
+                [33.406472, -111.960917],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_7bd22ea589fd77b4fcbc059652ef5973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e12b567a0abc54c8d0a679fd60e88699 = $(`<div id="html_e12b567a0abc54c8d0a679fd60e88699" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_17   Bikes: 909</div>`)[0];
+                popup_7bd22ea589fd77b4fcbc059652ef5973.setContent(html_e12b567a0abc54c8d0a679fd60e88699);
+            
+        
+
+        marker_2f33cb47cb173b884042f8170617ccf4.bindPopup(popup_7bd22ea589fd77b4fcbc059652ef5973)
+        ;
+
+        
+    
+    
+            var marker_83821b8cb0bed80391ca05dcd256b9aa = L.marker(
+                [33.421056, -111.926056],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_5e7efd44da5f30277e79baa4d2c8a218 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0d0dfffa74aac2d6e8f1f76352b84f9 = $(`<div id="html_c0d0dfffa74aac2d6e8f1f76352b84f9" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_18   Bikes: 22</div>`)[0];
+                popup_5e7efd44da5f30277e79baa4d2c8a218.setContent(html_c0d0dfffa74aac2d6e8f1f76352b84f9);
+            
+        
+
+        marker_83821b8cb0bed80391ca05dcd256b9aa.bindPopup(popup_5e7efd44da5f30277e79baa4d2c8a218)
+        ;
+
+        
+    
+    
+            var marker_bd16e375ed6460b158d36c3ac06baf55 = L.marker(
+                [33.429472, -111.907639],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_e617dbef0f14b03460b057fd6010af74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf91c93fff52f1d492bedba83758042c = $(`<div id="html_bf91c93fff52f1d492bedba83758042c" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_19   Bikes: 229</div>`)[0];
+                popup_e617dbef0f14b03460b057fd6010af74.setContent(html_bf91c93fff52f1d492bedba83758042c);
+            
+        
+
+        marker_bd16e375ed6460b158d36c3ac06baf55.bindPopup(popup_e617dbef0f14b03460b057fd6010af74)
+        ;
+
+        
+    
+    
+            var marker_bd8ab99bac0fe5185accc3128c7399d4 = L.marker(
+                [33.421417, -111.969472],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_e3b33797a27f86c3d1f601c7ee1ae73b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b20876f3fad16eba7b8791398f79920 = $(`<div id="html_5b20876f3fad16eba7b8791398f79920" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_20   Bikes: 42</div>`)[0];
+                popup_e3b33797a27f86c3d1f601c7ee1ae73b.setContent(html_5b20876f3fad16eba7b8791398f79920);
+            
+        
+
+        marker_bd8ab99bac0fe5185accc3128c7399d4.bindPopup(popup_e3b33797a27f86c3d1f601c7ee1ae73b)
+        ;
+
+        
+    
+    
+            var marker_a6fb63357ad44e407d9ef11a7bc0be23 = L.marker(
+                [33.422194, -111.877139],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_ec73bf1d974e2364905f0c54bca40686 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3dc0a141bf2d7cd553f613888d17339 = $(`<div id="html_b3dc0a141bf2d7cd553f613888d17339" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_21   Bikes: 35</div>`)[0];
+                popup_ec73bf1d974e2364905f0c54bca40686.setContent(html_b3dc0a141bf2d7cd553f613888d17339);
+            
+        
+
+        marker_a6fb63357ad44e407d9ef11a7bc0be23.bindPopup(popup_ec73bf1d974e2364905f0c54bca40686)
+        ;
+
+        
+    
+    
+            var marker_a84558901afc03b31cb4c443d27702a8 = L.marker(
+                [33.406167, -111.909],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_4e493cec34f747210bf0d84973418bd2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1e120a301929a9511e7c7d3ac2d580 = $(`<div id="html_5f1e120a301929a9511e7c7d3ac2d580" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_22   Bikes: 18</div>`)[0];
+                popup_4e493cec34f747210bf0d84973418bd2.setContent(html_5f1e120a301929a9511e7c7d3ac2d580);
+            
+        
+
+        marker_a84558901afc03b31cb4c443d27702a8.bindPopup(popup_4e493cec34f747210bf0d84973418bd2)
+        ;
+
+        
+    
+    
+            var marker_8afd4b2289231f339a4ce88dd022c6c3 = L.marker(
+                [33.429389, -111.901056],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_eb891288f73d23aefb206425f48853f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ca6a6b33fbf3db250dcf97b2afa46ee = $(`<div id="html_7ca6a6b33fbf3db250dcf97b2afa46ee" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_23   Bikes: 197</div>`)[0];
+                popup_eb891288f73d23aefb206425f48853f1.setContent(html_7ca6a6b33fbf3db250dcf97b2afa46ee);
+            
+        
+
+        marker_8afd4b2289231f339a4ce88dd022c6c3.bindPopup(popup_eb891288f73d23aefb206425f48853f1)
+        ;
+
+        
+    
+    
+            var marker_2606a884947db3a55aac07c62bcfd879 = L.marker(
+                [33.414917, -111.902139],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_df7e740f6fafc051c38660c9d2fe8301 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e78f7d463a93e919b037220e45067a7 = $(`<div id="html_0e78f7d463a93e919b037220e45067a7" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_24   Bikes: 35</div>`)[0];
+                popup_df7e740f6fafc051c38660c9d2fe8301.setContent(html_0e78f7d463a93e919b037220e45067a7);
+            
+        
+
+        marker_2606a884947db3a55aac07c62bcfd879.bindPopup(popup_df7e740f6fafc051c38660c9d2fe8301)
+        ;
+
+        
+    
+    
+            var marker_812fa766b0587ffe2ce558bb9946ec83 = L.marker(
+                [33.425472, -111.953833],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_a6d6bdea135e66392e2398d1bc7396e0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95e465ae17176ef2e3db93366bb77983 = $(`<div id="html_95e465ae17176ef2e3db93366bb77983" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_25   Bikes: 9</div>`)[0];
+                popup_a6d6bdea135e66392e2398d1bc7396e0.setContent(html_95e465ae17176ef2e3db93366bb77983);
+            
+        
+
+        marker_812fa766b0587ffe2ce558bb9946ec83.bindPopup(popup_a6d6bdea135e66392e2398d1bc7396e0)
+        ;
+
+        
+    
+    
+            var marker_c4e2aab1977f5e8bfcd743fcb927242b = L.marker(
+                [33.406472, -111.960917],
+                {}
+            ).addTo(map_e22c26d389efcb8ceb8e127b5f8e57a8);
+        
+    
+        var popup_3ea128cc15fb840e5df716abde005420 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d45cd3ddab13b030732ec29f967afb3 = $(`<div id="html_3d45cd3ddab13b030732ec29f967afb3" style="width: 100.0%; height: 100.0%;">Loc_id:Loc_26   Bikes: 122</div>`)[0];
+                popup_3ea128cc15fb840e5df716abde005420.setContent(html_3d45cd3ddab13b030732ec29f967afb3);
+            
+        
+
+        marker_c4e2aab1977f5e8bfcd743fcb927242b.bindPopup(popup_3ea128cc15fb840e5df716abde005420)
+        ;
+
+        
+    
+</script>
+</html>
