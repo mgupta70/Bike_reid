@@ -187,7 +187,96 @@ def plot_sorted_bike_data(df, sort_by = 'Bicyclist', train_val = False):
     plt.tight_layout()
     plt.show()
     
+    
+    
+######################################################### Object Detection #####################################################
+def check_missing_txts(im_paths, txt_paths):
+    txt_fnames = [f.name[:-4] for f in txt_paths]
+    im_names = [f.name[:-4] for f in im_paths]
+    
+    imgs_missing_txts = []
+    for o in im_names:
+        if o not in txt_fnames:
+            imgs_missing_txts.append(o)
+            print(o, " : Annotation not found")
+    return imgs_missing_txts
 
+
+def check_missing_jpgs(im_paths, txt_paths):
+    txt_fnames = [f.name[:-4] for f in txt_paths]
+    im_names = [f.name[:-4] for f in im_paths]
+    
+    txts_missing_imgs = []
+    for o in txt_fnames:
+        if o not in im_names:
+            txts_missing_imgs.append(o)
+            print(o, " : Image not found")
+    return txts_missing_imgs
+    
+def get_image_txt_files(path):
+    '''input - path to main folder
+    output - list of all images and txts as paths'''
+    
+    images = get_image_files(path)
+    txt_files = list(path.rglob("*.txt"))
+    print('Total txt files: ',len(txt_files)); print('Total Images: ', len(images))
+    
+    return images, txt_files
+
+def check_missing_txts(im_paths, txt_paths):
+    txt_fnames = [f.name[:-4] for f in txt_paths]
+    im_names = [f.name[:-4] for f in im_paths]
+    
+    imgs_missing_txts = []
+    for o in im_names:
+        if o not in txt_fnames:
+            imgs_missing_txts.append(o)
+    print('Images without label: ', len(imgs_missing_txts))
+    return imgs_missing_txts
+
+def check_missing_jpgs(im_paths, txt_paths):
+    txt_fnames = [f.name[:-4] for f in txt_paths]
+    im_names = [f.name[:-4] for f in im_paths]
+    
+    txts_missing_imgs = []
+    for o in txt_fnames:
+        if o not in im_names:
+            txts_missing_imgs.append(o)
+    print('Image Not found: ', txts_missing_imgs)
+    return txts_missing_imgs
+
+def check_label_class(txt_files):
+    ''' check if all labels start from 0 and not 15'''
+    files_to_correct = []
+    for o in txt_files:
+        with open(o, 'r') as file:
+            lines = file.readlines()
+            modified_lines = []
+            for line in lines:
+                if not line.startswith('0'):
+                    files_to_correct.append(o)
+
+    print('Txt files with incorrect class labels: ', len(files_to_correct))
+    
+
+    return files_to_correct
+             
+def rectify_15(files_to_correct):
+    ''' change files whose class start with 15 to 0'''
+    for o in files_to_correct:
+        with open(o, 'r') as file:
+            lines = file.readlines()
+            modified_lines = []
+            for line in lines:
+                if line.startswith('15'):
+                    modified_line= '0'+ line[2:]
+                else:
+                    modified_line = line
+                modified_lines.append(modified_line)
+            with open(o, 'w') as file:
+                file.writelines(modified_lines)
+
+#######################################################################################################################################
 
 def save_pickle(var, name):
     ''' Saves a pickle file for variable `var` with `name`  '''
